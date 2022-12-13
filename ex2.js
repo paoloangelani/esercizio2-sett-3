@@ -3,7 +3,7 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-function stringCap(a, b) {
+/*function stringCap(a, b) {
     let risultato = a.slie(0, 2) + b.slice(-3);
     return risultato.toUpperCase();
 
@@ -13,7 +13,7 @@ function stringCap(a, b) {
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
-const elementiRandom = () => {
+/*const elementiRandom = () => {
     const array = [];
     for (let index = 0; index < 10; index++) {
         array.push(Math.flor(Math.random() * 100))
@@ -24,7 +24,7 @@ const elementiRandom = () => {
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
 
-let numbers = [2, 4, 6, 7, 8, 9, 57, 7];
+/*let numbers = [2, 4, 6, 7, 8, 9, 57, 7];
 let pari = numbers.filter(function (ele) {
     return ele % 2 === 0;
 });
@@ -52,7 +52,7 @@ console.log(sum);
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
 
-const arr = [1, 2, 3, 4];
+/*const arr = [1, 2, 3, 4];
 const reducer = (accumulator, curr) => accumulator + curr;
 console.log(arr.reduce(reducer));
 
@@ -65,11 +65,11 @@ console.log(arr.reduce(reducer));
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-/*miastringa = new String("Gianluigi,contava,le,pecore")
-miaarray = miastringa.split(",")
+const lenght = array => {
+    return array.map(elem => elem.lenght);
+}
 
-let testo = "";
-alert(testo.length);
+console.log(lenght(["epicode", "is", "great"]))
 
 /* ESERCIZIO 9
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
