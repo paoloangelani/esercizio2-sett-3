@@ -3,6 +3,12 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
+function stringCap(a, b) {
+    let risultato = a.slie(0, 2) + b.slice(-3);
+    return risultato.toUpperCase();
+
+}
+
 /* ESERCIZIO 2
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
@@ -11,14 +17,14 @@
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
 
-/*let numbers = [2, 4, 6, 7, 8, 9, 57, 7];
+let numbers = [2, 4, 6, 7, 8, 9, 57, 7];
 let pari = numbers.filter(function (ele) {
-  return ele % 2 === 0;
+    return ele % 2 === 0;
 });
 console.log(pari);
 
 function dispari(valore) {
-  return valore % 2 !== 0;
+    return valore % 2 !== 0;
 }
 let odds = numbers.filter(dispari);
 console.log(odds);
@@ -27,11 +33,11 @@ console.log(odds);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-/*const array = [1, 2, 3, 4];
+const array = [1, 2, 3, 4];
 let sum = 0;
 
 for (let i = 0; i < array.length; i++) {
-  sum += array[i];
+    sum += array[i];
 }
 console.log(sum);
 
@@ -39,7 +45,7 @@ console.log(sum);
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
 
-/*const arr = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4];
 const reducer = (accumulator, curr) => accumulator + curr;
 console.log(arr.reduce(reducer));
 
@@ -62,7 +68,7 @@ alert(testo.length);
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-/*const hundred = () => {
+const hundred = () => {
     for (let i = 0; i < 100; i++) {
         if (i % 2 === 0) {
             continue;
