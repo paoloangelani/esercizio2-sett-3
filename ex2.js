@@ -13,6 +13,13 @@ function stringCap(a, b) {
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
+const elementiRandom = () => {
+    const array = [];
+    for (let index = 0; index < 10; index++) {
+        array.push(Math.flor(Math.random() * 100))
+    }
+    return array;
+}
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
